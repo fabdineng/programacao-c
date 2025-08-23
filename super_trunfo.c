@@ -8,26 +8,27 @@
 
 int main() {
 
-    char uf1;
-    char codcarta1[3], cid1[15];
+    char uf1 = 'k';
+    char codcarta1[4], cid1[16];
     int pop1, ptur1;
     float area1, pib1;
 
-    char uf2;
-    char codcarta2[3], cid2[15];
+    char uf2 = 'z';
+    char codcarta2[4], cid2[16];
     int pop2, ptur2;
     float area2, pib2;
 
+   
     // ESTADOS: A=RJ, B=CE, C=MG, D=ES, E=SP, F=PI, G=AL, H=BA
     //Cadastro da carta 1
 
-    printf("ESTADOS: A=RJ, B=CE, C=MG, D=ES, E=SP, F=PI, G=AL, H=BA\n");
+    printf("ESTADOS: A=RJ, B=CE, C=MG, D=ES, E=SP, F=PI, G=AL, H=BA\n\n");
 
     printf("***** Cadastro da Primeira carta *****\n");
 
         printf("Informe o Estado: ");
             scanf(" %c", &uf1);
-        printf("Informe o Codigo da Carta: ");
+        printf("Informe o Codigo da Carta: "); 
             scanf("%s", &codcarta1);
         printf("Informe a Cidade: ");
             scanf("%s", &cid1);
@@ -40,6 +41,8 @@ int main() {
         printf("Informe a Quantidade de Pontos Turisticos: ");
             scanf("%d", &ptur1);
         
+    printf("\n");
+
     //Cadastro da carta 2
 
     printf("***** Cadastro da Segunda carta *****\n");
@@ -59,7 +62,7 @@ int main() {
         printf("Informe a Quantidade de Pontos Turisticos: ");
             scanf("%d", &ptur2);
 
-
+printf("\n\n");
 // Exibe carta 1
 
     printf("***** Carta 1 *****\n");
@@ -72,6 +75,7 @@ int main() {
          printf("PIB: %.2f\n", pib1);
          printf("Pontos Turisticos: %d\n", ptur1);
 
+printf("\n");
 // Exibe carta 2
 
     printf("***** Carta 2 *****\n");
